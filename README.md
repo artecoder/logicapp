@@ -1,6 +1,7 @@
 # logicapp-standard
 
-En el ejemplo se hace uso de funciones stateless y stateful
+En el ejemplo se hace uso de funciones stateless y stateful 
+
 
 Componentes a instalar:
 [Azure Storage Emulator]()
@@ -14,6 +15,7 @@ Componentes a instalar:
 Tips:
 Para ejecutar correctamente la aplicacion, tener ejecutado el azure emulator
 desde la extension de Azure en visual code , se realizan las publicaciones.
+
 ![](Images/azure-extention.png)
 
 Si se desea crear un nuevo workflow, este se debe inicializar desde la extension de azure:
@@ -22,7 +24,7 @@ Si se desea crear un nuevo workflow, este se debe inicializar desde la extension
 
 Para la funciones stateless por defecto no registra informacion del log de ejecucion, para esto hay que habilitar el modo debug
 
-![]()
+![](Images/debug.png)
 
 A nivel de Visual code se debe realizar un operacion parecida para validar el historico de ejecucion:
 colocar la linea `Workflows.Stateless1.OperationOptions": "WithStatelessRunHistory"`
