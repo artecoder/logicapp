@@ -44,3 +44,7 @@ Se tienen menos triggers disponibles en la version standard stateless vs la vers
 anidamiento de workflows: se permite llamar flujos extentes dentro de otros, permitiendo aplicar patrones de ejecucion, tal y como se hace en las funciones de larga duracion. [link](https://docs.microsoft.com/en-us/azure/logic-apps/single-tenant-overview-compare#nested-behavior-differences-between-stateful-and-stateless-workflows)
 
 ![](Images/workflow.png)
+
+se debe validar la opcion debug, en ese momento se estan obteniendo errores en la momento de se ejecucion, lo que impide el uso de los puntos de interrupcion
+
+![](Images/error.png)
