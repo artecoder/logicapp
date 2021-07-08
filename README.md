@@ -48,3 +48,8 @@ anidamiento de workflows: se permite llamar flujos extentes dentro de otros, per
 se debe validar la opcion debug, en ese momento se estan obteniendo errores en la momento de se ejecucion, lo que impide el uso de los puntos de interrupcion
 
 ![](Images/error.png)
+
+Estructura de carpetas [link](https://docs.microsoft.com/en-us/azure/logic-apps/edit-app-settings-host-settings?tabs=visual-studio-code#visual-studio-code-project-structure).
+
+Es importante excluir en alchivo local.settings.json del repositorio, dado que es una archivo de trabajo en el proceso de desarrollo y solo debe estar vigente en modo local y afectan a todos los workflows.
+
