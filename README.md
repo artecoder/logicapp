@@ -1,1 +1,1 @@
-# logicapp
+# logicapp-stadard

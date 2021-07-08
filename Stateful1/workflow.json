@@ -1,0 +1,45 @@
+{
+    "definition": {
+        "$schema": "https://schema.management.azure.com/providers/Microsoft.Logic/schemas/2016-06-01/workflowdefinition.json#",
+        "actions": {
+            "Response": {
+                "type": "Response",
+                "kind": "http",
+                "inputs": {
+                    "statusCode": 200,
+                    "body": "ok"
+                },
+                "runAfter": {
+                    "Call_an_Azure_function": [
+                        "Succeeded"
+                    ]
+                },
+                "operationOptions": "Asynchronous"
+            },
+            "Call_an_Azure_function": {
+                "type": "Function",
+                "inputs": {
+                    "method": "POST",
+                    "body": {
+                        "Nombre": "Andres",
+                        "id": 2
+                    },
+                    "function": {
+                        "connectionName": "azureFunctionOperation-2"
+                    }
+                },
+                "runAfter": {}
+            }
+        },
+        "triggers": {
+            "manual": {
+                "type": "Request",
+                "kind": "Http",
+                "inputs": {}
+            }
+        },
+        "contentVersion": "1.0.0.0",
+        "outputs": {}
+    },
+    "kind": "Stateful"
+}

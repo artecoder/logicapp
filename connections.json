@@ -1,0 +1,44 @@
+{
+  "functionConnections": {
+    "azureFunctionOperation": {
+      "function": {
+        "id": "/subscriptions/d387d7c4-3dc1-4a04-b494-176559453375/resourceGroups/rg-correo/providers/Microsoft.Web/sites/FunctionApp220191124061409/functions/Function1"
+      },
+      "triggerUrl": "https://functionapp220191124061409.azurewebsites.net/api/function1",
+      "authentication": {
+        "type": "QueryString",
+        "name": "Code",
+        "value": "@appsetting('azureFunctionOperation_functionAppKey')"
+      },
+      "displayName": "function1"
+    },
+    "azureFunctionOperation-2": {
+      "function": {
+        "id": "/subscriptions/d387d7c4-3dc1-4a04-b494-176559453375/resourceGroups/rg-correo/providers/Microsoft.Web/sites/FunctionApp220191124061409/functions/Function1"
+      },
+      "triggerUrl": "https://functionapp220191124061409.azurewebsites.net/api/function1",
+      "authentication": {
+        "type": "QueryString",
+        "name": "Code",
+        "value": "@appsetting('azureFunctionOperation_12_functionAppKey')"
+      },
+      "displayName": "function2"
+    }
+  },
+  "managedApiConnections": {
+    "office365": {
+      "api": {
+        "id": "/subscriptions/d387d7c4-3dc1-4a04-b494-176559453375/providers/Microsoft.Web/locations/centralus/managedApis/office365"
+      },
+      "connection": {
+        "id": "/subscriptions/d387d7c4-3dc1-4a04-b494-176559453375/resourceGroups/logicapp-rg/providers/Microsoft.Web/connections/office365"
+      },
+      "connectionRuntimeUrl": "https://7782c1c3b19e4a78.04.common.logic-centralus.azure-apihub.net/apim/office365/ee1bdb29a30e43d4b4bf935c07224fa3/",
+      "authentication": {
+        "type": "Raw",
+        "scheme": "Key",
+        "parameter": "@appsetting('office365-connectionKey')"
+      }
+    }
+  }
+}
