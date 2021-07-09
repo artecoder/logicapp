@@ -5,7 +5,7 @@
 
 variables:
   # Azure Resource Manager connection created during pipeline creation
-  azureSubscription: '47fc2352-9d25-4214-acf3-e0a145a04ec3'
+  azureSubscription: 'XXXXXXXXXXX'
 
   # Function app name
   functionAppName: 'jasontest-logicapp'

@@ -130,4 +130,27 @@ info: Host.Triggers.Workflows[202]
 
 ## PipeLines
 
-falta ....
+Para el proceso de depliegue de la logic app desde Azure DevOps
+
+- [Release](https://docs.microsoft.com/en-us/azure/logic-apps/set-up-devops-deployment-single-tenant-azure-logic-apps?tabs=azure-devops#release-to-azure)
+
+
+Ejemplo : azure-pipelines.yml en el root
+
+a tener encuenta.
+- comprimir el paquete a despliegar, con toda la estructura de carpetas requerida.
+
+- Se usa la tarea de despliegue de funciones, en el modo clasico no se puede realizar esta operacion (a la fecha) dado que no da la opcion **appType: 'workflowapp'**
+
+Ejemplo de la tarea
+
+```yml
+- task: AzureFunctionApp@1
+  displayName: 'Azure functions app deploy'
+  inputs:
+    azureSubscription: '$(azureSubscription)'
+    appType: 'workflowapp'
+    appName: $(functionAppName)
+    package: '$(Build.ArtifactStagingDirectory)/$(Build.BuildId).zip'
+    deploymentMethod: 'zipDeploy'
+```
