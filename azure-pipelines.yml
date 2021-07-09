@@ -19,7 +19,7 @@ variables:
 steps:
 - task: ArchiveFiles@2
   inputs:
-    rootFolderOrFile: '$(Build.BinariesDirectory)/src'
+    rootFolderOrFile: '$(System.DefaultWorkingDirectory)/_jaysson1710_logicapp/src'
     includeRootFolder: true
     archiveType: 'zip'
     archiveFile: '$(Build.ArtifactStagingDirectory)/$(Build.BuildId).zip'
