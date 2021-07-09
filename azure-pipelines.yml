@@ -47,6 +47,7 @@ variables:
             displayName: 'Azure functions app deploy'
             inputs:
               azureSubscription: '$(azureSubscription)'
-              appType: workflowapp
+              appType: 'workflowapp'
               appName: $(functionAppName)
               package: '$(Build.ArtifactStagingDirectory)/$(Build.BuildId).zip'
+              deploymentMethod: 'zipDeploy'
