@@ -7,7 +7,7 @@
                 "kind": "http",
                 "inputs": {
                     "statusCode": 200,
-                    "body": "OK"
+                    "body": "ok"
                 },
                 "runAfter": {}
             }
