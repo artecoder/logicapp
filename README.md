@@ -89,9 +89,9 @@ Para esta ejecución tener en cuenta:
 - Ruta de acceso al contenedor: una vez ejecutado el contenedor *docker run ....* proceder al llamad de la URL  http://localhost:**port-run-image**/runtime/webhooks/workflow/api/management/workflows/**name-workflow**/triggers/manual/listCallbackUrl?api-version=2020-05-01-preview&code=**master-key** . 
 
 Especificar :
-* *port-run-image*: puerto sobre el cual se ejecuta el contenedor.
-* *name-workflow*: nombre del workflow a ejecutar. Solo permite un workflow por proyecto.
-* *master-key*: clave principal del contenedor asociado en la variable de entorno *AzureWebJobsStorage*
+      * *port-run-image*: puerto sobre el cual se ejecuta el contenedor.
+      * *name-workflow*: nombre del workflow a ejecutar. Solo permite un workflow por proyecto.
+      * *master-key*: clave principal del contenedor asociado en la variable de entorno *AzureWebJobsStorage*
 
 
 - Obtención de master-key sobre el storage: este valor puede no ser generado cuando se ejecuta el contenedor, por lo que se debe hacer el llamado a la url *http://localhost:**port-run-image**/runtime/webhooks/workflow/api/management/workflows/**name-workflow**/triggers/manual/listCallbackUrl?api-version=2020-05-01-preview* con metodo post
