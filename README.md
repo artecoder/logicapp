@@ -13,6 +13,16 @@ Componentes a instalar:
 - [Azure Extension]()
 - [Documentación](https://docs.microsoft.com/en-us/azure/logic-apps/single-tenant-overview-compare) Aca se encuentra toda la informacion para el manejo de la herramienta
 
+Documentacion adicional
+- [run-anywhere](https://techcommunity.microsoft.com/t5/integrations-on-azure/azure-logic-apps-running-anywhere-runtime-deep-dive/ba-p/1835564)
+- [networking](https://techcommunity.microsoft.com/t5/integrations-on-azure/logic-apps-anywhere-networking-possibilities-with-logic-app/ba-p/2105047)
+- [app-settings](https://docs.microsoft.com/en-us/azure/logic-apps/edit-app-settings-host-settings?tabs=visual-studio-code)
+- [what-is-single-tenent](files/What-is-Single-Tenancy.pdf)
+- [overview-single-tenent](files/Overview-Single-tenant.pdf)
+- [edit-app-settings](files/edit-app-settings.pdf)
+- [parameters](https://docs.microsoft.com/en-us/azure/logic-apps/parameterize-workflow-app?tabs=azure-portal)
+
+
 Tips:
 - Para ejecutar correctamente la aplicacion, tener ejecutado el azure emulator. 
 
@@ -135,15 +145,13 @@ info: Host.Triggers.Workflows[202]
       Workflow run ends. flowName='dotnetwf', flowId='27bd2346dc764f8e8682afc8bdfc5ae2', flowSequenceId='08585757572181258470', flowRunSequenceId='08585757553985531521605972675CU00', correlationId='4b2b260b-526a-4805-8c2b-c369ad2eb71a', extensionVersion='1.0.0.0', siteName='UNDEFINED_SITE_NAME', slotName='', status='Succeeded', statusCode='', error='', durationInMilliseconds='2760', clientTrackingId='08585757553985531521605972675CU00', properties='{"$schema":"2016-06-01","startTime":"2021-07-09T17:24:46.9261336Z","endTime":"2021-07-09T17:24:49.7986397Z","status":"Succeeded","resource":{"workflowId":"27bd2346dc764f8e8682afc8bdfc5ae2","workflowName":"dotnetwf","runId":"08585757553985531521605972675CU00","originRunId":"08585757553985531521605972675CU00"},"correlation":{"clientTrackingId":"08585757553985531521605972675CU00"}}', sequencerType='Linear', flowScaleUnit='cu00', platformOptions='RunDistributionAcrossPartitions, RepetitionsDistributionAcrossSequencers, RunIdTruncationForJobSequencerIdDisabled, RepetitionPreaggregationEnabled', kind='Stateful', runtimeOperationOptions='None', usageConfigurationName='', activityId='da893135-0a07-411e-a806-62f406cb64d2'.
 ```
 
-
 ## PipeLines
 
 Para el proceso de depliegue de la logic app desde Azure DevOps
 
 - [Release](https://docs.microsoft.com/en-us/azure/logic-apps/set-up-devops-deployment-single-tenant-azure-logic-apps?tabs=azure-devops#release-to-azure)
 
-
-Ejemplo : *azure-pipelines.yml* en el root
+Ejemplo del pipeline de despliegue: [pipe](azure-pipelines.yml)
 
 A tener encuenta.
 - Comprimir el paquete a despliegar, con toda la estructura de carpetas requerida.
