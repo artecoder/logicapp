@@ -32,3 +32,4 @@ steps:
     appType: 'workflowapp'
     appName: $(functionAppName)
     package: '$(Build.ArtifactStagingDirectory)/$(Build.BuildId).zip'
+    deploymentMethod: 'zipDeploy'
