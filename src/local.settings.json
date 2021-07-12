@@ -1,0 +1,16 @@
+{
+  "IsEncrypted": false,
+  "Values": {
+    "AzureWebJobsStorage": "DefaultEndpointsProtocol=https;AccountName=storageaccountlogicb531;AccountKey=NWAgx26+8eybzIAAi2fb/0eawpqTXDbUy1QfoireXzQd7Qx3uFCn9Ntj86fsqVXnVcXp6ZaCONMH8yGyDJ+hFw==;EndpointSuffix=core.windows.net",
+    "FUNCTIONS_WORKER_RUNTIME": "node",
+    "FUNCTIONS_V2_COMPATIBILITY_MODE": "true",
+    "WORKFLOWS_TENANT_ID": "7fbe498c-e540-4556-b198-7b2e16bff9b0",
+    "WORKFLOWS_SUBSCRIPTION_ID": "d387d7c4-3dc1-4a04-b494-176559453375",
+    "WORKFLOWS_RESOURCE_GROUP_NAME": "logicapp-rg",
+    "WORKFLOWS_LOCATION_NAME": "centralus",
+    "WORKFLOWS_MANAGEMENT_BASE_URI": "https://management.azure.com/",
+    "azureFunctionOperation_functionAppKey": "/XYdW0hhYT1LLwD8Xs1CraOOH/otrxVniUoQP6l0efUvAtUcEwYrqA==",
+    "office365-connectionKey": "eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiIsIng1dCI6InphbFZuaWZMMkRMcWw1NVdHaXB0TDR6Q2xhYyJ9.eyJ0cyI6IjdmYmU0OThjLWU1NDAtNDU1Ni1iMTk4LTdiMmUxNmJmZjliMCIsImNzIjoibG9naWMtYXBpcy1jZW50cmFsdXMvb2ZmaWNlMzY1L2VlMWJkYjI5YTMwZTQzZDRiNGJmOTM1YzA3MjI0ZmEzIiwidiI6Ii05MjIzMzcyMDM2ODU0Nzc1ODA4IiwiZW52aWQiOiI3NzgyYzFjM2IxOWU0YTc4IiwiYXVkIjoiaHR0cHM6Ly83NzgyYzFjM2IxOWU0YTc4LjA0LmNvbW1vbi5sb2dpYy1jZW50cmFsdXMuYXp1cmUtYXBpaHViLm5ldC9hcGltL29mZmljZTM2NS9lZTFiZGIyOWEzMGU0M2Q0YjRiZjkzNWMwNzIyNGZhMyIsIm1hbmFnZW1lbnQiOiJodHRwczovL21hbmFnZW1lbnQubG9naWMtY2VudHJhbHVzLmF6dXJlLWFwaWh1Yi5uZXQvIiwiaXNzIjoiaHR0cHM6Ly9sb2dpYy1hcGlzLWNlbnRyYWx1cy5henVyZS1hcGltLm5ldC8iLCJleHAiOjE2MjYzMDQ1NTksIm5iZiI6MTYyNTY5OTc1OX0.Yq5sP0wOP1gerTohZrhvVIbtzVzMT9XJdLWIKrKaTi_LSegFh-mtjdiaYLihhle1bUr4Bhf8bNmOh__HEqB4_uiIKOju0b7z3F9eWyeGP1AKC4IETTaFdOQ5YrJlmTazpNnu0FvdqFWST7Ypn4phhtWh92fFgVGulz1Qt6DA75cs5tAtQEYEHPKom3UkpAzJdbvXh01IUOUSs0YK5pXA3d0IkUCv52GKep2wtPFvR5OJy-aBwrye-utt23a-_VI9ZSIikyC-D7WWX2ueBBD2a-VvpKB3l_-szeJFBetvlB_kNNKakDfdOU1V2QIEqfkPg9zq7QoGhUtujQdQHM3cqw",
+    "azureFunctionOperation_12_functionAppKey": "/XYdW0hhYT1LLwD8Xs1CraOOH/otrxVniUoQP6l0efUvAtUcEwYrqA=="
+  }
+}
